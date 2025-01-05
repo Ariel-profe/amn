@@ -1,0 +1,279 @@
+{
+    "title": "Projects",
+    "subtitle": "our works",
+    "description": "All our projects are based on personalized and comprehensive attention to resolve needs, offering quality and technological advice for an excellent result. Each of them represents a unique challenge in which the skills and knowledge acquired over time are applied. Below we present the work that has been done and we hope that it will inspire you for your own projects and ideas.",
+    "projects": [
+        {
+          "id": 1,
+          "name": "Mónica Ojeda",
+          "description":
+            "Web based on Haute Couture Design that allows users to search for the best clothing for parties, birthdays and events, participation in parades and courses that are carried out to learn different techniques.",
+          "tags": [
+            {
+              "name": "react",
+              "color": "blue-text-gradient"
+            },
+            {
+              "name": "mongodb",
+              "color": "green-text-gradient"
+            },
+            {
+              "name": "styled components",
+              "color": "pink-text-gradient"
+            }
+          ],
+          "image": "/works/01-monica/portada.jpg",
+          "icon": "/works/01-monica/iso.svg",
+          "source_code_link": "https://monicaojeda.com.ar/"
+        },
+        {
+          "id": 2,
+          "name": "Onic",
+          "description":
+            "E-commerce application that offers the best technological products with a great variety. Search, choose, buy and enjoy.",
+          "tags": [
+            {
+              "name": "nextjs",
+              "color": "blue-text-gradient"
+            },
+            {
+              "name": "typescript",
+              "color": "green-text-gradient"
+            },
+            {
+              "name": "docker",
+              "color": "pink-text-gradient"
+            }
+          ],
+          "image": "/works/02-onic/portada.png",
+          "icon": "/works/02-onic/iso.svg",
+          "modalImg": "/works/02-onic/modalImg.png"
+        },
+        {
+          "id": 3,
+          "name": "San Pablo Institute",
+          "description":
+            "Institutional educational website where information is available on all the activities that are carried out so that managers, teachers, parents and students have access to the news.",
+          "tags": [
+            {
+              "name": "react",
+              "color": "blue-text-gradient"
+            },
+            {
+              "name": "tailwind",
+              "color": "green-text-gradient"
+            },
+            {
+              "name": "figma",
+              "color": "pink-text-gradient"
+            }
+          ],
+          "image": "/works/03-instituto-san-pablo/portada.jpg",
+          "icon": "/works/03-instituto-san-pablo/iso.svg",
+          "source_code_link": "https://isanpablo.com.ar"
+        },
+        {
+          "id": 4,
+          "name": "Solange Rodriguez",
+          "description":
+            "Personal Landing Page to show content about work, goals and passion for the profession. Users can make their queries and have the service data available.",
+          "tags": [
+            {
+              "name": "react",
+              "color": "blue-text-gradient"
+            },
+            {
+              "name": "tailwind",
+              "color": "green-text-gradient"
+            },
+            {
+              "name": "figma",
+              "color": "pink-text-gradient"
+            }
+          ],
+          "image": "/works/04-solange/portada.png",
+          "icon": "/works/04-solange/iso.svg",
+          "source_code_link": "https://solange-rodriguez-web.vercel.app/"
+        },
+        {
+          "id": 5,
+          "name": "Solange Rodriguez",
+          "type": "Content creation and planning",
+          "description":
+            "Creation and planning of content on Instagram to be able to share and interact with users on important topics about psychology.",
+          "image": "/works/05-solange/portada.png",
+          "icon": "/works/05-solange/iso.svg",
+          "modalImg": "/works/05-solange/modalImg.png"
+        },
+        {
+          "id": 6,
+          "name": "Solange Rodriguez",
+          "type": "Logo redesign",
+          "description":
+            "Logo redesign where an investigation and identification of the purpose of changes to be made was carried out. The idea is processed so that it is coherent and the simplicity of what is to be communicated is maintained.",
+          "image": "/works/06-solange/portada.png",
+          "icon": "/works/06-solange/iso.svg",
+          "modalImg": "/works/06-solange/modalImg.png"
+        },
+        {
+          "id": 7,
+          "name": "Solange Rodriguez",
+          "type": "Corporate stationery design",
+          "description":
+            "Design of corporate stationery, letterhead, to give professionalism to a document to present (in this case to patients). Personal contact information, logo and other information were included to be completed.",
+          "image": "/works/07-solange/portada.png",
+          "icon": "/works/07-solange/iso.svg",
+          "modalImg": "/works/07-solange/modalImg.png"
+        },
+        {
+          "id": 8,
+          "name": "Mónica Ojeda",
+          "type": "Logo creation",
+          "description":
+            "Logo composed of different fonts to identify the brand of your profession. It presents a combination of colors and movement is given through the initial letter, taking as its starting point the fall of the flowing fabrics.",
+          "image": "/works/08-monica/portada.png",
+          "icon": "/works/08-monica/iso.svg",
+          "modalImg": "/works/08-monica/modalImg.png"
+        },
+        {
+          "id": 9,
+          "name": "Mónica Ojeda",
+          "type": "Business card design",
+          "description":
+            "Design of personal cards where the necessary information is shown to publicize the work that is done with the clothing and thus be able to generate a connection with customers.",
+          "image": "/works/09-monica/portada.png",
+          "icon": "/works/09-monica/iso.svg",
+          "modalImg": "/works/09-monica/modalImg.png"
+        },
+        {
+          "id": 10,
+          "name": "Mónica Ojeda",
+          "type": "Content creation and management",
+          "description":
+            "Management and creation of content on social networks, Facebook and Instagram, to show users the clothing made and the different designs offered for parties, events, birthdays, weddings, among others.",
+          "image": "/works/10-monica/portada.png",
+          "icon": "/works/10-monica/iso.svg",
+          "modalImg": "/works/10-monica/modalImg.png"
+        },
+        {
+          "id": 11,
+          "name": "Onic",
+          "type": "Brand creation",
+          "description":
+            "Brand creation, contemplating an analysis of its identity, definition of the name, typographic combinations and color palette.",
+          "image": "/works/11-onic/portada.png",
+          "icon": "/works/11-onic/iso.svg",
+          "modalImg": "/works/11-onic/modalImg.png"
+        },
+        {
+          "id": 12,
+          "name": "Sara Massutti",
+          "type": "Content creation and management",
+          "description":
+            "Management and creation of content for social networks, Facebook and Instagram, to share with users her work as a Dr. Specialist in aesthetic medicine.",
+          "image": "/works/12-sara/portada.png",
+          "icon": "/works/12-sara/iso.svg",
+          "modalImg": "/works/12-sara/modalImg.png"
+        },
+        {
+          "id": 13,
+          "name": "Emilia Diez",
+          "type": "Advice and content planning",
+          "description":
+            "Advice and content planning on Instagram to be able to have a portfolio of her work as a photographer. Includes definition of the theme, detection of key objectives, guide with tips and recommendations.",
+          "image": "/works/13-emilia/portada.png",
+          "icon": "/works/13-emilia/iso.svg",
+          "modalImg": "/works/13-emilia/modalImg.png"
+        },
+        {
+          "id": 14,
+          "name": "Emilia Diez",
+          "type": "Design of profiles and general structure",
+          "description":
+            "General structure and feed design of two profiles for Instagram (family photography and photography for marketing). Creation of welcome and profile publications that accompany the color palette chosen by the client.",
+          "image": "/works/14-emilia/portada.png",
+          "icon": "/works/14-emilia/iso.svg",
+          "modalImg": "/works/14-emilia/modalImg.png"
+        },
+        {
+          "id": 15,
+          "name": "Martín González",
+          "type": "Advice and content planning",
+          "description":
+            "Advice and content planning on Instagram for a specific period where a specific objective was raised. Some strategies were taken into account to achieve greater visibility in the videos.",
+          "image": "/works/15-martin/portada.png",
+          "icon": "/works/15-martin/iso.svg",
+          "modalImg": "/works/15-martin/modalImg.png"
+        },
+        {
+          "id": 16,
+          "name": "Titulizar",
+          "type": "Repairs and technical service",
+          "description":
+            "Repairs and technical assistance services (remote and on-site) to solve software and hardware problems that arise.",
+          "image": "/works/16-titulizar/portada.png",
+          "icon": "/works/16-titulizar/iso.svg",
+          "modalImg": "/works/16-titulizar/modalImg.png"
+        },
+        {
+          "id": 17,
+          "name": "Titulizar",
+          "type": "Survey and advice",
+          "description":
+            "Survey and advice on technological decision-making for different sectors within the company. The restructuring of the cabling and connections is being carried out in stages.",
+          "image": "/works/17-titulizar/portada.png",
+          "icon": "/works/17-titulizar/iso.svg",
+          "modalImg": "/works/17-titulizar/modalImg.png"
+        },
+        {
+          "id": 18,
+          "name": "Empretur",
+          "type": "Survey and advice",
+          "description":
+            "Survey in the different areas and jobs of the company to reorganize and improve technologies in terms of network connectivity. A report is made detailing the characteristics of each one, its status and suggested recommendation for updates.",
+          "image": "/works/18-empretur/portada.png",
+          "icon": "/works/18-empretur/iso.svg",
+          "modalImg": "/works/18-empretur/modalImg.png"
+        },
+        {
+          "id": 19,
+          "name": "Emilia Diez",
+          "type": "Marketing and Graphic Design",
+          "description":
+            "Brand creation where the logo design is worked on, the essence of the profession that is to be reflected, the typographic combinations, the color palette that will accompany it, and the concepts that are to be included for the multimedia content where it will be used are analyzed.",
+          "image": "/works/19-emilia/portada.png",
+          "icon": "/works/19-emilia/iso.svg",
+          "modalImg": "/works/19-emilia/modalImg.webp"
+        },
+        {
+          "id": 20,
+          "name": "Solange Rodríguez",
+          "type": "Marketing and Graphic Design",
+          "description":
+            "Digital design on Psychological Therapy, where patients can obtain relevant information about the professional who will attend them, way of working, payment methods and contact information.",
+          "image": "/works/20-solange/portada.png",
+          "icon": "/works/20-solange/iso.svg",
+          "modalImg": "/works/20-solange/modalImg.webp"
+        },
+        {
+          "id": 21,
+          "name": "Solange Rodríguez",
+          "type": "Graphic Design",
+          "description":
+            "Design of personal cards to be able to disseminate contact information with interested people. This helps them to know and consult about the available services and to access them.",
+          "image": "/works/21-solange/portada.png",
+          "icon": "/works/21-solange/iso.svg",
+          "modalImg": "/works/21-solange/modalImg.png"
+        },
+        {
+          "id": 22,
+          "name": "RG Ingeniería y Computación",
+          "type": "IT Service",
+          "description":
+            "DNS (Domain Name System) programming service and MX records required by Google servers that are necessary for the delivery of emails to the established address.",
+          "image": "/works/22-rg/portada.png",
+          "icon": "/works/22-rg/iso.svg",
+          "modalImg": "/works/22-rg/modalImg.png"
+        }
+      ]
+}

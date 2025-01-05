@@ -1,0 +1,33 @@
+{
+    "title": "Reseñas",
+    "subtitle": "lo que otros dicen",
+    "testimonials": [
+        {
+            "id": 1,
+            "testimonial":
+              "Pensé que era imposible hacer un sitio web tan hermoso como nuestro producto, pero esta empresa me demostró que estaba equivocado.",
+            "name": "Solange Rodriguez",
+            "designation": "Psicóloga",
+            "company": "Solange Rodriguez Terapia",
+            "image": "https://randomuser.me/api/portraits/women/4.jpg"
+          },
+          {
+            "id": 2,
+            "testimonial":
+              "Nunca he conocido una empresa web que realmente se preocupe por el éxito de sus clientes como lo hace AMN.",
+            "name": "Guillermina Elias",
+            "designation": "Doctora",
+            "company": "Conicet Mendoza",
+            "image": "https://randomuser.me/api/portraits/women/2.jpg"
+          },
+          {
+            "id": 3,
+            "testimonial":
+              "Después de que AMN optimizó nuestro sitio web, nuestro tráfico aumentó en un 50 %. ¡No tenemos palabras de agradecimiento!",
+            "name": "Daniel Amin",
+            "designation": "CEO",
+            "company": "Todo Computacion",
+            "image": "https://randomuser.me/api/portraits/men/7.jpg"
+          }
+    ]
+}

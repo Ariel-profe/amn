@@ -1,0 +1,63 @@
+{
+    "title": "Services",
+    "subtitle" : "What is our purpose",
+    "goals": [
+        {
+            "id": 1,
+            "title": "Development",
+            "subtitle": "Frontend. Backend. Databases. Servers.",
+            "icon": "/company/development.svg",
+            "iconBg": "#f5c6a4",
+            "team": "Developers Team",
+            "points": [
+              "Develop and maintainance web applications using the best technologies and other related.",
+              "Collaboration with cross-functional teams, including designers, business analysts, project managers, product managers, and other developers to create high-quality software.",
+              "We are based on the best practices of agile methodologies and the unified development process.",
+              "Creation of custom applications for different platforms, such as mobile, desktop or web."
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Marketing",
+            "subtitle": "Management of social networks. Advertising. Emails.",
+            "icon": "/company/marketing.svg",
+            "iconBg": "#ee7779",
+            "team": "Marketing Team",
+            "points": [
+              "Creation and promotion of online content to drive traffic to a website.",
+              "Advice to improve the visibility of a company online and recommendations to know how to make the most of digital marketing opportunities.",
+              "Manage social media accounts establishing marketing strategies to promote a company through social platforms.",
+              "Create and send email campaigns to a subscriber list to promote products or services."
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Graphic Design",
+            "subtitle": "UX/UI designs. Brands. Logos. Packaging. Flyers.",
+            "icon": "/company/graphic-design.svg",
+            "iconBg": "#a3426c",
+            "team": "Designers Team",
+            "points": [
+              "Produce a unique and recognizable visual image that represents a company or brand.",
+              "Include the creation of printed materials such as brochures, flyers, banners, packaging, letterheads and posters.",
+              "Creation of attractive and user-friendly visual designs for pages, websites, applications.",
+              "Poster design to promote products or services on social media platforms."
+            ]
+          },
+          {
+            "id": 4,
+            "title": "IT Service",
+            "subtitle": "Support. Software. Hardware. Security",
+            "icon": "/company/computer.svg",
+            "iconBg": "#862848",
+            "team": "Informatic Team",
+            "points": [
+              "Installation and configuration of computer systems, as well as their maintenance and updating.",
+              "Remote or face-to-face technical assistance services to solve technical problems or provide support to users.",
+              "Virus and malware protection services. In addition, security solutions to protect information and computer systems of a company.",
+              "Information technology consulting, advice on technological decision-making and IT project management.",
+              "Sale of computer supplies with a wide variety of brands and products (PCs, notebooks, printers, headphones, monitors, among others)."
+            ]
+          }
+    ]
+}

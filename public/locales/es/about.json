@@ -1,0 +1,38 @@
+{
+    "title": "Nuestra Empresa",
+    "subtitle": "introducción",
+    "description": "Somos una empresa joven, dinámica y proactiva. Nos centramos en proporcionar servicios y productos tecnológicos para dar soluciones personalizadas e innovadoras a las necesidades de cada cliente. Para mantenernos actualizados, estamos permanentemente incorporando nuevos conocimientos de diseño, sistemas informáticos y tecnología.",
+    "services" : [
+        {
+            "id": 1,
+            "title": "Atención personalizada e integral",
+            "icon": "/services/service-1.svg"
+        },
+        {
+            "id": 2,
+            "title": "Equipo altamente capacitado",
+            "icon": "/services/service-2.svg"
+          },
+          {
+            "id": 3,
+            "title": "Relevamientos, evaluaciones y diagnóstico",
+            "icon": "/services/service-3.svg"
+          },
+          {
+            "id": 4,
+            "title": "Planificación de alternativas a implementar",
+            "icon": "/services/service-4.svg"
+          },
+          {
+            "id": 5,
+            "title": "Alianzas estratégicas con otras empresas",
+            "icon": "/services/service-5.svg"
+          },
+          {
+            "id": 6,
+            "title": "Clientes de diferentes rubros, tamaños y sectores",
+            "icon": "/services/service-6.svg"
+          }
+    ]
+}
+

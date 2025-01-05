@@ -1,0 +1,63 @@
+{
+    "title": "Servicios",
+    "subtitle" : "el objetivo",
+    "goals": [
+        {
+            "id": 1,
+            "title": "Desarrollo",
+            "subtitle": "Frontend. Backend. Bases de datos. Servidores.",
+            "iconBg": "#f5c6a4",
+            "icon": "/company/development.svg",
+            "team": "Equipo de desarrollo",
+            "points": [
+              "Desarrollo y mantenimiento de aplicaciones, sitios y páginas web personalizadas utilizando las mejores tecnologías y otras afines.",
+              "Colaboración con equipos multifuncionales, incluidos diseñadores, analistas comerciales, project manager, gerentes de productos y otros desarrolladores para crear software de alta calidad.",
+              "Nos basamos en las mejores prácticas de metodologías ágiles y el proceso de desarrollo unificado.",
+              "Creación de aplicaciones a medida para diferentes plataformas, como móvil, escritorio o web."
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Marketing",
+            "subtitle": "Gestión de Redes sociales. Publicidad. Emails.",
+            "iconBg": "#ee7779",
+            "icon": "/company/marketing.svg",
+            "team": "Equipo de Marketing",
+            "points": [
+              "Creación y promoción de contenido en línea para atraer tráfico a un sitio web.",
+              "Asesoramiento para mejorar la visibilidad de una empresa por internet y recomendaciones para saber cómo aprovechar al máximo las oportunidades del marketing digital.",
+              "Administrar cuentas de redes sociales estableciendo estrategias de marketing para promocionar una empresa a través de plataformas sociales.",
+              "Crear y enviar campañas de correo electrónico a una lista de suscriptores para promocionar productos o servicios."
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Diseño Gráfico ",
+            "subtitle": "Diseños UX/UI. Marcas. Logos. Packaging. Folletería.",
+            "iconBg": "#a3426c",
+            "icon": "/company/graphic-design.svg",
+            "team": "Equipo de diseñadores",
+            "points": [
+              "Producir una imagen visual única y reconocible que represente a una empresa o marca.",
+              "Incluir la creación de materiales impresos como folletos, flyers, banners, packaging, hojas membretadas y carteles.",
+              "Creación de diseños visuales atractivos y fáciles de usar para páginas, sitios web, aplicaciones.",
+              "Diseño de carteles para promocionar productos o servicios en plataformas de redes sociales."
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Servicio TI",
+            "subtitle": "Soporte. Software. Hardware. Seguridad",
+            "iconBg": "#862848",
+            "icon": "/company/computer.svg",
+            "team": "Equipo Informático",
+            "points": [
+              "Instalación y configuración de sistemas informáticos, así como su mantenimiento y actualización.",
+              "Servicios de asistencia técnica remota o presencial para solucionar problemas técnicos o dar soporte a los usuarios.",
+              "Servicios de protección contra virus y malware. Además, soluciones de seguridad para proteger la información y los sistemas informáticos de una empresa.",
+              "Consultoría en tecnologías de la información, asesoramiento en la toma de decisiones tecnológicas y gestión de proyectos TI.",
+              "Venta de insumos informáticos con amplia variedad de marcas y productos (PC, notebooks, impresoras, auriculares, monitores, entre otros)."
+            ]
+          }
+    ]
+}

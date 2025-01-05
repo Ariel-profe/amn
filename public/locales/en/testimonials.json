@@ -1,0 +1,33 @@
+{
+    "title": "Testimonials",
+    "subtitle": "what other say",
+    "testimonials": [
+        {
+            "id": 1,
+            "testimonial":
+              "I thought it was impossible to make a website as beautiful as our product, but this company proved me wrong.",
+            "name": "Solange Rodriguez",
+            "designation": "Psychologist",
+            "company": "Solange Rodriguez Therapy",
+            "image": "https://randomuser.me/api/portraits/women/4.jpg"
+          },
+          {
+            "id": 2,
+            "testimonial":
+              "I've never met a company of web development who truly cares about their clients' success like AMN does.",
+            "name": "Guillermina Elias",
+            "designation": "Doctor",
+            "company": "Conicet Mendoza",
+            "image": "https://randomuser.me/api/portraits/women/2.jpg"
+          },
+          {
+            "id": 3,
+            "testimonial":
+              "After AMN optimized our website, our traffic increased by 50%. We can't thank them enough!",
+            "name": "Daniel Amin",
+            "designation": "CEO",
+            "company": "Todo Computacion",
+            "image": "https://randomuser.me/api/portraits/men/7.jpg"
+          }
+    ]
+}
