@@ -4,7 +4,7 @@ import { IProject } from '@/interfaces';
 
 export function ProjectCard({project, setProjectSelected, setOpenModal}:{project:IProject, setProjectSelected: Dispatch<SetStateAction<IProject>>, setOpenModal: Dispatch<SetStateAction<boolean>>;}) {
 
-  const {category, client, image, title, icon, desc} = project;
+  const {category, client, image, title, icon} = project;
 
   const handleSelect = () => {
     setProjectSelected(project);

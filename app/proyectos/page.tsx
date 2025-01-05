@@ -12,7 +12,7 @@ import { RiCloseCircleLine } from "react-icons/ri";
 import { Button } from "@/components/ui/button";
 import { PaginationDemo } from "@/components/projects/pagination";
 
-let allCategories:string[] = ['todas', ...new Set(projects.map( i => i.category))];
+const allCategories:string[] = ['todas', ...new Set(projects.map( i => i.category))];
 
 const modalVariants = {
   open: { opacity: 1, x: 0 },

@@ -27,7 +27,7 @@ export const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-0 flex items-center justify-between">
-        <Logo />
+        <Logo color="#fff"/>
         <div className="hidden lg:flex">
           <Links />
         </div>
@@ -37,10 +37,10 @@ export const Navbar = () => {
   );
 };
 
-const Logo = ({ color = "white" }) => {
+const Logo = ({color}:{color:string}) => {
   return (
-    <Link href="/" className="flex items-center gap-2">
-      <img src="/logo.webp" width={90} height={90} alt="logo" />
+    <Link href="/" className="flex items-center gap-2" >
+      <img src="/logo.webp" width={90} height={90} alt="logo" className={color} />
     </Link>
   );
 };
