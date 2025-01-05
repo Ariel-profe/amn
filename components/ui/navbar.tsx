@@ -111,9 +111,9 @@ const AboutUsContent = () => {
           <FiArrowRight />
         </Link>
       </div>
-      <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-white p-2 lg:col-span-8">
+      <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3  p-2 lg:col-span-8">
         {aboutLinks.map( link => (
-            <Link key={link.title} href={link.href} className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100">
+            <Link key={link.title} href={link.href} className="rounded border-2 border-neutral-200 p-3 transition-colors hover:bg-neutral-100">
                 <h3 className="mb-1 font-semibold">{link.title}</h3>
                 <p className="text-xs">
                     {link.description}
@@ -139,9 +139,9 @@ const ServicesContent = () => {
           <FiArrowRight />
         </Link>
       </div>
-      <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 bg-white p-2 lg:col-span-8">
+      <div className="col-span-12 grid grid-cols-2 grid-rows-2 gap-3 p-2 lg:col-span-8">
         {servicesLinks.map( link => (
-            <Link key={link.title} href={link.href} className="rounded border-2 border-neutral-200 bg-white p-3 transition-colors hover:bg-neutral-100">
+            <Link key={link.title} href={link.href} className="rounded border-2 border-neutral-200 p-3 transition-colors hover:bg-neutral-100">
                 <h3 className="mb-1 font-semibold">{link.title}</h3>
                 <p className="text-xs">
                     {link.description}
@@ -171,6 +171,7 @@ const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }:{ children:
               setMenuOpen(false);
             }}
             href={href}
+            className="z-50"
           >
             {children}
           </Link>
@@ -220,7 +221,7 @@ const MobileMenu = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="block lg:hidden">
-      <button onClick={() => setOpen(true)} className="block text-3xl">
+      <button onClick={() => setOpen(true)} className="block text-3xl mr-5">
         <FiMenu />
       </button>
       <AnimatePresence>
