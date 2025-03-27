@@ -40,7 +40,7 @@ export const Plans = () => {
                         <div className="text-xl lg:text-2xl text-black dark:text-slate-300 pb-4">{feature.name}</div>
                         <div className="text-lg lg:text-xl dark:text-slate-400">{feature.description}</div>
 
-                        <Button> Explorar </Button>
+                        {/* <Button> Explorar </Button> */}
                     </div>
                 ))}
         </div>

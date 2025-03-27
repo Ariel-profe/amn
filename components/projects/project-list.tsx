@@ -10,7 +10,7 @@ interface Props {
 
 export const ProjectList:FC<Props> = ({projects, setProjectSelected, setOpenModal}) => {
   return (
-    <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-3 w-full lg:min-h-[80vh] lg:w-4/5'>
+    <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-3 w-full lg:w-4/5'>
         {projects.map( (project) => (
           <ProjectCard key={project.id} project={project} setProjectSelected={setProjectSelected} setOpenModal={setOpenModal} />
         ))}

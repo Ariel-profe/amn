@@ -10,7 +10,7 @@ export const Services = () => {
         <TitleCard title={"Lo que"} secondTitle={"podemos ofrecerte"} />
         <Card
           title="Atención personalizada e integral"
-          desc="Para asegurarnos de cumplir tus expectativas y que el camino hacia tus sueños sea el mejor."
+          desc="Para asegurarnos de cumplir tus expectativas y que el camino hacia tus objetivos sea el mejor."
           src="/images/homepage/atencion.jpg"
           icon={MdPeopleOutline}
         />

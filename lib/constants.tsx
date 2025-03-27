@@ -138,12 +138,12 @@ export const brands = [
 ];
 
 export const galleryAboutImages = [
-  "/images/about/company/gab.webp",
+  "/images/about/company/gabinete.png",
   "/images/about/company/cup.webp",
   "/images/about/company/headphones.webp",
-  "/images/about/company/micro.jpg",
-  "/images/about/company/mouse.jpg",
+  "/images/about/company/microfone.png",
+  "/images/about/company/mouse.webp",
   "/images/about/company/pad.png",
-  "/images/about/company/screen.webp",
+  "/images/about/company/monitor.png",
   "/images/about/company/keyboard.webp"
 ];

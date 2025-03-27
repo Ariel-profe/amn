@@ -5,7 +5,7 @@ import { Plans } from "@/components/services/plans"
 
 const ServicesPage = () => {
   return (
-    <section className="max-w-[1640px] mt-40 mx-auto relative">
+    <section className="container">
       <Services />
       <Conectivity />
       <Plans />

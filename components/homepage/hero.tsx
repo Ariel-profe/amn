@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 export const Hero = () => {
 
   return (
-    <div className="relative flex lg:flex-row items-center w-full justify-center h-screen">
+    <div className="relative flex lg:flex-row items-center w-full justify-center h-[calc(100vh_-_120px)] lg:h-[calc(100vh_-_190px)]">
        <motion.div 
           initial={{opacity: 0, scale: 0}}
           animate={{opacity: 1, scale: 1, transition: {delay: 1.9, duration: 1}}}

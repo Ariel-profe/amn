@@ -3,7 +3,7 @@ import Faqs from "@/components/contact/faqs";
 
 const ContactPage = () => {
   return (
-    <section className="max-w-[1640px] mx-auto mt-40 relative">
+    <section>
       <ContactForm />
       <Faqs />
     </section>

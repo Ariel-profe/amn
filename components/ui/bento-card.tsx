@@ -14,7 +14,7 @@ export const Card = ({
     icon: IconType
   }) => {
     return (
-      <div className="group relative flex lg:h-56 flex-col justify-between overflow-hidden p-6 transition-colors hover:bg-neutral-950 md:h-80 md:p-9">
+      <div className="group relative flex  flex-col justify-between overflow-hidden p-6 transition-colors hover:bg-neutral-950 md:h-80 md:p-9">
         <h2 className="relative z-10 text-3xl leading-tight transition-transform duration-500 group-hover:translate-y-3">
           {title}
         </h2>

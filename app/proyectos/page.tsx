@@ -23,8 +23,8 @@ const ProjectsPage = () => {
 
   const [categories] = useState(allCategories);
   const [isSelected, setIsSelected] = useState('todas');
-  const [menuItems, setMenuItems] = useState<IProject[]>(projects);
   const [projectSelected, setProjectSelected] = useState({} as IProject);
+  const [menuItems, setMenuItems] = useState<IProject[]>(projects);
   const [openModal, setOpenModal] = useState(false);
 
   // Pagination states
@@ -63,7 +63,7 @@ const ProjectsPage = () => {
   };  
 
   return (
-    <section className="max-w-[1640px] mx-auto relative mt-40">
+    <section>
       <div className="flex flex-col lg:flex-row items-start gap-5 w-full">
         <Categories categories={categories} filterItems={filterItems} isSelected={isSelected} />
         <ProjectList projects={currentProjects} setProjectSelected={setProjectSelected} setOpenModal={setOpenModal} />
@@ -73,6 +73,7 @@ const ProjectsPage = () => {
         projectsPerPage={projectsPerPage}
         totalPosts={menuItems.length}
         paginate={paginate}
+        currentPage={currentPage}
       />
       
       {/* Project Modal */}
@@ -96,7 +97,7 @@ const ProjectsPage = () => {
             transition: { duration: 0.5 }
           }}
           variants={modalVariants}
-          className="fixed inset-0 bg-black/95 z-50 flex justify-center items-center p-6 lg:p-10"
+          className="fixed inset-0 bg-black/95 z-50 flex justify-center items-center lg:p-10 overflow-y-scroll"
         >
          <div className="relative bg-white flex flex-col items-center justify-center dark:bg-amn-darker w-full h-full rounded-xl p-6 lg:p-10">
              <button 
@@ -106,20 +107,19 @@ const ProjectsPage = () => {
              </button>
 
              <div className="w-full flex flex-col lg:flex-row gap-5">
-
               {/* Image container */}
-              <div className="w-full lg:w-3/4">
-                <img src={projectSelected.modal_img} alt={`imagen-${projectSelected.title}`} className="w-full max-w-3xl rounded-xl" />
+              <div className="w-full flex items-center justify-center">
+                <img src={projectSelected.modal_img} alt={`imagen-${projectSelected.title}`} className="h-40 lg:h-full max-w-3xl rounded-xl" />
               </div>
 
               {/* Data container */}
-              <div className="w-full flex flex-col justify-between gap-y-5 lg:w-1/4">
-                <h3 className="text-xl lg:text-3xl">{projectSelected.title}</h3>
-                <p className="dark:text-slate-400 lg:text-xl">{projectSelected.desc}</p>
+              <div className="w-full flex flex-col justify-between gap-y-5">
+                <h3 className="text-lg lg:text-3xl">{projectSelected.title}</h3>
+                <p className="dark:text-slate-400 text-sm lg:text-xl text-justify">{projectSelected.desc}</p>
 
                 {projectSelected.link && <Button variant="outline"><a href={projectSelected.link} target="_blank">Visitar</a></Button>}
 
-                <div className="flex flex-col justify-center gap-3">
+                <div className="flex flex-col justify-center gap-3 text-xs lg:text-lg">
                 {projectSelected.tags?.map(tag => (
                   <p key={tag.name} className={`${tag.color}`}>
                     #{tag.name}

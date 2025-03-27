@@ -4,7 +4,7 @@ import { WorldMap } from "@/components/about/world-map";
 
 const AboutPage = () => {
   return (
-    <section className="max-w-[1640px] mx-auto relative mt-40">
+    <section>
       <Company />
       <Goals />
       <WorldMap />
