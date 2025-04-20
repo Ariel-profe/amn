@@ -1,6 +1,4 @@
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-
-import Image from "next/image";
 import { collabApps, collabContent } from "@/lib/constants";
 
 const RightCurve = () => {

@@ -12,11 +12,11 @@ import { RiCloseCircleLine } from "react-icons/ri";
 import { Button } from "@/components/ui/button";
 import { PaginationDemo } from "@/components/projects/pagination";
 
-const allCategories:string[] = ['todas', ...new Set(projects.map( i => i.category))];
+const allCategories: string[] = ['todas', ...new Set(projects.map(i => i.category))];
 
 const modalVariants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
+  open: { opacity: 1 },
+  closed: { opacity: 0  },
 }
 
 const ProjectsPage = () => {
@@ -29,38 +29,41 @@ const ProjectsPage = () => {
 
   // Pagination states
   const [currentPage, setCurrentPage] = useState(1);
-  const [projectsPerPage] = useState(8);
-  
+  const [projectsPerPage] = useState(9);
+
   // Get current projects
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
   const currentProjects = menuItems.slice(indexOfFirstProject, indexOfLastProject);
-  
-  
-    useEffect(() => {
-      if(menuItems.length < projectsPerPage){
-        setCurrentPage(1);
-      }
-  
-    }, [menuItems.length, projectsPerPage]);
-    
 
-    // Change page
-  const paginate = (pageNumber:number) => {
-      setCurrentPage(pageNumber);
+  useEffect(() => {
+    if (menuItems.length < projectsPerPage) {
+      setCurrentPage(1);
+    }
+  }, [menuItems.length, projectsPerPage]);
+
+  useEffect(() => {
+    if (openModal) {
+      document.documentElement.style.overflow = "hidden"
+    }
+  }, []);  
+
+  // Change page
+  const paginate = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
   };
 
   const filterItems = (category: string) => {
-    if(category === 'todas'){
+    if (category === 'todas') {
       setMenuItems(projects);
       setIsSelected('todas');
       return;
     };
 
-    const newCategory = projects.filter( c => c.category === category);
+    const newCategory = projects.filter(c => c.category === category);
     setMenuItems(newCategory);
     setIsSelected(category);
-  };  
+  };
 
   return (
     <section>
@@ -75,63 +78,73 @@ const ProjectsPage = () => {
         paginate={paginate}
         currentPage={currentPage}
       />
-      
+
       {/* Project Modal */}
       <AnimatePresence>
-      {openModal && (
-        <motion.div 
-          initial={{
-            opacity: 0,
-            y: 0, scale: 0.5
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            transition: {
-              type: "spring",
-              stiffness: 50
-          }}}
-          exit={{
-            opacity: 0,
-            transition: { duration: 0.5 }
-          }}
-          variants={modalVariants}
-          className="fixed inset-0 bg-black/95 z-50 flex justify-center items-center lg:p-10 overflow-y-scroll"
-        >
-         <div className="relative bg-white flex flex-col items-center justify-center dark:bg-amn-darker w-full h-full rounded-xl p-6 lg:p-10">
-             <button 
-                className="absolute top-2 right-2 hover:opacity-75 transition-all text-3xl text-rose-600" 
-                onClick={() => setOpenModal(false)}>
-                  <RiCloseCircleLine />
-             </button>
+        {openModal && (
+          <motion.div
+            initial={{
+              opacity: 0, 
+              scale: 0.8
+            }}
+            animate={{
+              opacity: 1,
+              scale: 1,
+              transition: {
+                type: "spring",
+                stiffness: 50
+              }
+            }}
+            exit={{
+              opacity: 0,
+              transition: { duration: 0.2 }
+            }}
+            variants={modalVariants}
+            className="fixed inset-0 bg-black/95 z-50 flex justify-center items-center lg:p-10 overflow-hidden"
+          >
+            <div className="relative bg-white flex flex-col items-center justify-center dark:bg-amn-darker w-full h-full rounded-xl p-6 lg:p-10 max-w-[1600px]">
+              <button
+                className="absolute top-2 right-2 hover:opacity-75 transition-all text-3xl text-rose-600"
+                onClick={() => {
+                  setOpenModal(false) 
+                  document.body.setAttribute('style', '')
+                  window.scrollTo({})
+                  }}>
+                <RiCloseCircleLine />
+              </button>
 
-             <div className="w-full flex flex-col lg:flex-row gap-5">
-              {/* Image container */}
-              <div className="w-full flex items-center justify-center">
-                <img src={projectSelected.modal_img} alt={`imagen-${projectSelected.title}`} className="h-40 lg:h-full max-w-3xl rounded-xl" />
-              </div>
+              <div className="w-full flex flex-col lg:flex-row gap-5">
+                {/* Image container */}
+                <div className="w-full flex items-center justify-center">
+                  <img src={projectSelected.modal_img} alt={`imagen-${projectSelected.title}`} className="h-40 lg:h-full max-w-3xl rounded-xl" />
+                </div>
 
-              {/* Data container */}
-              <div className="w-full flex flex-col justify-between gap-y-5">
-                <h3 className="text-lg lg:text-3xl">{projectSelected.title}</h3>
-                <p className="dark:text-slate-400 text-sm lg:text-xl text-justify">{projectSelected.desc}</p>
+                {/* Data container */}
+                <div className="w-full flex flex-col justify-between gap-y-5">
+                  <h3 className="text-lg lg:text-3xl">{projectSelected.title}</h3>
+                  <p className="dark:text-slate-400 text-sm lg:text-xl text-justify">{projectSelected.desc}</p>
 
-                {projectSelected.link && <Button variant="outline"><a href={projectSelected.link} target="_blank">Visitar</a></Button>}
+                  {projectSelected.link && (
+                    <a
+                      href={projectSelected.link}
+                      target="_blank"
+                      className="bg-slate-800 text-center py-2 w-full md:hover:bg-slate-700 transition"
+                    >Visitar
+                    </a>)}
 
-                <div className="flex flex-col justify-center gap-3 text-xs lg:text-lg">
-                {projectSelected.tags?.map(tag => (
-                  <p key={tag.name} className={`${tag.color}`}>
-                    #{tag.name}
-                  </p>
-                ))}
+                  <div className="flex flex-col justify-center gap-3 text-xs lg:text-lg">
+                    {projectSelected.tags?.map(tag => (
+                      <p key={tag.name} className={`${tag.color}`}>
+                        #{tag.name}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
-             </div>
 
-         </div>
-     </motion.div>
-      )}
+            </div>
+          </motion.div>
+        )}
       </AnimatePresence>
     </section>
   )

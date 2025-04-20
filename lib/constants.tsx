@@ -130,7 +130,6 @@ export const brands = [
   {url: "/works/onic/logo.svg", alt: "onic"},
   {url: "/works/instituto-san-pablo/logo.svg", alt: "san-pablo"},
   {url: "/works/titulizar/logo.webp", alt: "titulizar"},
-  {url: "/works/empretur/logo.webp", alt: "empretur"},
   {url: "/works/rg-ingenieria/logo.webp", alt: "rg"},
   {url: "/works/monica/logo.svg", alt: "monica-ojeda"},
   {url: "/works/valvtronic/logo.svg", alt: "valvtronic"},
@@ -145,5 +144,6 @@ export const galleryAboutImages = [
   "/images/about/company/mouse.webp",
   "/images/about/company/pad.png",
   "/images/about/company/monitor.png",
-  "/images/about/company/keyboard.webp"
+  "/images/about/company/keyboard.webp",
+  "/images/about/company/webcam.webp"
 ];

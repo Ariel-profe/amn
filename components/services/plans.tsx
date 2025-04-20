@@ -29,7 +29,7 @@ export const Plans = () => {
                     grid
                     justify-center
                     items-center
-                    gap-4
+                    gap-2
                     border
                     rounded-xl
                     p-4 
@@ -37,7 +37,7 @@ export const Plans = () => {
                     bg-slate-500
                     dark:bg-slate-800
                     ">
-                        <div className="text-xl lg:text-2xl text-black dark:text-slate-300 pb-4">{feature.name}</div>
+                        <div className="text-xl lg:text-2xl text-black dark:text-slate-300 ">{feature.name}</div>
                         <div className="text-lg lg:text-xl dark:text-slate-400">{feature.description}</div>
 
                         {/* <Button> Explorar </Button> */}

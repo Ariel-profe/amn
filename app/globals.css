@@ -126,7 +126,7 @@ main{
         rgba(0, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0) 10%
       ),
-      url("/content/map.webp");
+      url("/content/map.png");
     background-size: 300%;
   }
 

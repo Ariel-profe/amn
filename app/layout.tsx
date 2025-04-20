@@ -19,8 +19,8 @@ export default async function RootLayout({
   return (
     <html className='dark'>
       <link rel="icon" href="/iso1.svg" sizes="any" />
-      <body className={`${font.className} bg-slate-950 overflow-y-scroll overflow-x-hidden mx-auto`}>
-        <div className='flex flex-col'>
+      <body className={`${font.className} bg-slate-950/95 overflow-y-scroll overflow-x-hidden mx-auto`}>
+        <div className='flex flex-col mx-auto'>
           <Navbar />
           <main className='flex-grow border-b-2 pb-10 px-3 mx-auto w-full max-w-[1640px] relative mt-28 lg:mt-40'>
             {children}

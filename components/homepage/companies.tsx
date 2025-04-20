@@ -1,56 +1,68 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
-
-import { Subtitle } from "@/components/ui/subtitle";
-import { brands } from "@/lib/constants";
+import { cn } from "@/lib/utils";
+import { Marquee } from "../ui/marquee";
 
 
-export const Companies = () => {
+const reviews = [
+  {
+    name: "onic",
+    img: "/works/onic/logo.svg",
+  },
+  {
+    name: "instituto san pablo",
+    img: "/works/instituto-san-pablo/logo.svg",
+  },
+  {
+    name: "titulizar",
+    img: "/works/titulizar/logo.webp",
+  },
+  {
+    name: "re ingenieria",
+    img: "/works/rg-ingenieria/logo.webp",
+  },
+  {
+    name: "mónica ojeda",
+    img: "/works/monica/logo.webp",
+  },
+  {
+    name: "valvtronic",
+    img: "/works/valvtronic/logo.svg",
+  },
+  {
+    name: "osar",
+    img: "/works/osar/logo.webp",
+  },
+];
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+const firstRow = reviews.slice(0, reviews.length / 2);
+const secondRow = reviews.slice(reviews.length / 2);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === brands.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 1500);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
+const ReviewCard = ({
+  img,
+  name,
+}: {
+  img: string;
+  name: string;
+}) => {
   return (
-    <div id="marcas" className="lg:py-20">
-      <Subtitle subtitle="Estas compañías confían en nosotros" />
-
-        <AnimatePresence custom={currentImageIndex}>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {brands.map((image, index) => (
-            <motion.div
-            key={index}
-            initial={{ opacity: 0 }}
-            animate={{
-              opacity : index === currentImageIndex ? 1 : 0.8,
-              scale : index === currentImageIndex ? 1.2 : 1,
-              transition: { duration: 0.5 },
-            }}
-            className="flex items-center justify-center h-40 w-full"
-            exit={{ opacity: 0 }}
-            custom={index}
-            transition={{ opacity: { duration: 0.5 }}}>
-                <img
-                  src={image.url}
-                  alt={image.alt}
-                  className="object-contain h-40 w-40 lg:h-52 lg:w-52 items-center justify-center flex mx-auto"
-                  />
-              </motion.div>
-          ))}
-          </div>
-        </AnimatePresence>
-    </div>
+    <figure className={cn("relative h-[120px] w-60 overflow-hidden flex items-center justify-center p-4")}>
+        <img className="w-full"  alt="" src={img} />
+    </figure>
   );
 };
+
+export function Companies() {
+  return (
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden lg:py-20">
+      <Marquee pauseOnHover className="[--duration:20s]">
+        {firstRow.map((review) => (
+          <ReviewCard key={review.name} {...review} />
+        ))}
+      </Marquee>
+      <Marquee reverse pauseOnHover className="[--duration:20s]">
+        {secondRow.map((review) => (
+          <ReviewCard key={review.name} {...review} />
+        ))}
+      </Marquee>
+    </div>
+  );
+}

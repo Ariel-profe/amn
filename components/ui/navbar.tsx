@@ -14,14 +14,17 @@ export const Navbar = () => {
     setScrolled(latest > 150 ? true : false);
   });
   return (
-    <nav className={`fixed top-0 z-50 w-full text-white transition-all duration-300 ease-out flex items-center px-3  
+    <nav className={`fixed top-0 z-50 w-full text-white transition-all duration-300 ease-out px-3  
       ${scrolled
         ? "bg-slate-900 py-3 shadow-xl w-full"
         : "bg-neutral-950/0 py-6 shadow-none w-full"
       }`}>
-      <NavLeft setIsOpen={setIsOpen} />
-      <NavRight />
-      <NavMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+      <div className="flex items-center justify-between w-full max-w-[2100px] mx-auto">
+
+        <NavLeft setIsOpen={setIsOpen} />
+        <NavRight />
+        <NavMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+      </div>
     </nav>
   );
 };

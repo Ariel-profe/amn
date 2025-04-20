@@ -1,9 +1,8 @@
-'use client'
+'use client';
 
 import { motion } from "framer-motion";
 import { ThreeDCardExample } from "./3d-card-snnipet";
 import { EvervaultCardSnippet } from "./evervault-card-snnipet";
-
 
 export const GraphicDesign = () => {
     return ( 
@@ -31,7 +30,7 @@ export const GraphicDesign = () => {
           Interfaz y experiencia de usuario
         </h2>
         <p className="mt-4 text-lg font-normal text-slate-500 text-start mx-auto">
-          Las herramientas que usamos en el departamento de diseno son las mas actuales y las que permiten al usuario tenes la mejor experiencia al utilizarlas.
+          Las herramientas que usamos en el departamento de diseño son las más actuales y las que permiten al usuario tenes la mejor experiencia al utilizarlas.
         </p>
       </div>
     </div>  );

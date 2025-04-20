@@ -83,7 +83,7 @@ export const FoldableMap = () => {
             }}
             className="flex w-full justify-center font-semibold lg:text-2xl"
           >
-            <p className="flex items-center gap-1 text-amn-semidark font-thin">
+            <p className="flex items-center gap-1 text-amn-semidark font-bold">
               <span className="animate-pulse"><IoLocationOutline /></span>
               Mendoza - Argentina
             </p>

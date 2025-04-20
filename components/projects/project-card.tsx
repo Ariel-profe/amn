@@ -9,6 +9,7 @@ export function ProjectCard({project, setProjectSelected, setOpenModal}:{project
   const handleSelect = () => {
     setProjectSelected(project);
     setOpenModal(true);
+    document.body.setAttribute('style', `position: fixed; top: -${window.scrollY}px; left: 0; right: 0;`)
   };
 
   return (

@@ -203,7 +203,7 @@ export const projects: IProject[] = [
     image: "/works/titulizar/portada-2.webp",
     desc: `Relevamiento y asesoramiento en la toma de decisiones tecnológicas para diferentes sectores dentro de la empresa. Por etapas se va llevando a cabo la reestructuración del cableado y conexiones.`,
     icon: "/works/titulizar/iso-1.svg",
-    modal_img: "/works/titulizar/modalImg-1.webp"
+    modal_img: "/works/titulizar/modalImg-2.webp"
   },
   {
     id: 17,
